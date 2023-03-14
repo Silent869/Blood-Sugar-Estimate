@@ -130,7 +130,7 @@
       <option value="15">Cheese</option>
     </select>
     <br />
-    <button onclick="calculate()">Estimate Blood Glucose Level</button>
+    <button onclick="calculate()">Estimate Blood Glucose Level</button>
     <br />
     <p id="result"></p>
 
@@ -144,47 +144,17 @@
 
         let classification;
         if (mealGI < 55) {
-          classification = "low";
+          classification = "low. <br><br> You might have a low blood sugar presence in your blood. Hypoglycemia symptoms can rapidly progress to seizures, coma and even death if it’s is severe. You can raise your blood sugar quickly by eating or drinking a simple sugar source, such as glucose tablets, hard candy or fruit juice. Also a good rule of thumb is called  the “rule of 15.” When you suffer from low blood sugar you should eat 15 grams of carbohydrates and wait 15 minutes to see if your blood sugar level rises and you feel better. If the number stays below 70 or you’re still experiencing symptoms, repeat the process with another 15 grams of carbohydrates. When your blood sugar is very low, it’s hard not to want to eat more — the hunger center of the brain is on overdrive to fix the problem. But that waiting period is important, because over-treating hypoglycemia could make that number swing too high, causing a different problem.";
         } else if (mealGI > 70) {
-          classification = "high";
+          classification = "high. <br><br> You’re likely to have a high blood sugar presence in your blood . Having high blood sugar levels can be discomforting and you have to follow some tips to help you bring down high blood glucose levels. A range of lifestyle interventions can help you lower your high blood sugar levels and keep them within the target range. First of all if you take insulin, one way to reduce blood sugar is to inject insulin. If you decide to correct with insulin, watch you don’t over correct as this can lead to hypoglycemia and can be dangerous, particularly so before bed. Moreover,  Exercise can help to lower blood sugar and walking is a good way of achieving this. Also , when your blood sugar levels are running high, your body will try to flush excess sugar out of your blood through the urine. As a result, your body will need more fluids to rehydrate itself. Drinking water can help the body with flushing out some of the glucose in the blood. Hyperglycemia occurs when there is too much glucose in the blood. Therefore, one way of reducing your blood glucose levels is reflecting on where sugar may be consumed in the diet. Think about any refined and processed foods that may be in your diet as these are often high in sugar. This can be achieved through a low carbohydrate diet. Managing blood sugar levels to prevent hyperglycemia is vital to avoid serious complications from diabetes such as other chronic diseases ";
         } else {
-          classification = "normal";
+          classification = "normal. <br><br> You probably have a normal amount of blood sugar and you can maintain it by eating a healthy diet with a plenty of fruit and vegetables, maintaining a healthy weight and getting regular physical activity can all help. Other tips include: Keep track of your blood sugar levels to see what makes them go up or down , Eat at regular times, and don’t skip meals, Choose foods lower in calories, saturated fat, trans fat, sugar, and salt, track your food, drink, and physical activity, Drink water instead of juice or soda, Limit alcoholic drinks, For a sweet treat, choose fruit, Control your food portions (for example, use the plate method : fill half your plate with non-starchy vegetables, a quarter with lean protein, and a quarter with a grain or starchy food).";
         }
 
         document.getElementById(
           "result"
-        ).innerHTML = `The glycemic index of your meal is considered ${classification}.`;
+        ).innerHTML = `The glycemic index of your meal is considered ${classification}`;
       }
     </script>
-    <p>You’re likely to have a high blood sugar presence in your blood . Having high blood sugar levels can be discomforting 
-      and you have to follow some tips to help you bring down high blood glucose levels. A range of lifestyle interventions 
-      can help you lower your high blood sugar levels and keep them within the target range. First of all if you take insulin,
-      one way to reduce blood sugar is to inject insulin. If you decide to correct with insulin, watch you don’t over correct 
-      as this can lead to hypoglycemia and can be dangerous, particularly so before bed. Moreover,  Exercise can help to lower
-      blood sugar and walking is a good way of achieving this. Also , when your blood sugar levels are running high, your body
-      will try to flush excess sugar out of your blood through the urine. As a result, your body will need more fluids to 
-      rehydrate itself. Drinking water can help the body with flushing out some of the glucose in the blood. Hyperglycemia 
-      occurs when there is too much glucose in the blood. Therefore, one way of reducing your blood glucose levels is reflecting
-      on where sugar may be consumed in the diet. Think about any refined and processed foods that may be in your diet as these 
-      are often high in sugar. This can be achieved through a low carbohydrate diet. Managing blood sugar levels to prevent 
-      hyperglycemia is vital to avoid serious complications from diabetes such as other chronic diseases .</p> <br>
-
-      <p>You might have a low blood sugar presence in your blood. Hypoglycemia symptoms can rapidly progress to seizures,
-        coma and even death if it’s is severe. You can raise your blood sugar quickly by eating or drinking a simple sugar
-        source, such as glucose tablets, hard candy or fruit juice. Also a good rule of thumb is called  the “rule of 15.” 
-        When you suffer from low blood sugar you should eat 15 grams of carbohydrates and wait 15 minutes to see if your 
-        blood sugar level rises and you feel better. If the number stays below 70 or you’re still experiencing symptoms, 
-        repeat the process with another 15 grams of carbohydrates. When your blood sugar is very low, it’s hard not to want
-        to eat more — the hunger center of the brain is on overdrive to fix the problem. But that waiting period is important,
-        because over-treating hypoglycemia could make that number swing too high, causing a different problem.</p><br>
-        
-        <p>You probably have a normal amount of blood sugar and you can maintain it by eating a healthy diet with a plenty of 
-          fruit and vegetables, maintaining a healthy weight and getting regular physical activity can all help. Other tips 
-          include: Keep track of your blood sugar levels to see what makes them go up or down , Eat at regular times, and don’t 
-          skip meals, Choose foods lower in calories, saturated fat, trans fat, sugar, and salt, track your food, drink, and 
-          physical activity, Drink water instead of juice or soda, Limit alcoholic drinks, For a sweet treat, choose fruit, 
-          Control your food portions (for example, use the plate method : fill half your plate with non-starchy vegetables,
-          a quarter with lean protein, and a quarter with a grain or starchy food).
-        </p>
   </body>
 </html>
